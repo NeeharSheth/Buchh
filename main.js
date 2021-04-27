@@ -1,10 +1,18 @@
-var Fname="Neehar";
-var Lname="Sheth :3";
+var img= ["grandad.jpeg","grandma.JPG","dad.jpeg","uncle.JPG","mom.jpeg","me.jpg","dveer.jpeg","covoar.jpeg"];
 
-console.log("My 'first' console froject -_-")
-console.log("I copy-pasted everything O_O");
-console.log(Fname+Lname);
-console.log(32+23);
-console.log(32-23);
-console.log(32*23);
-console.log(42/21);
+var names=["Madhukar Sheth","Mita Sheth","Xitij Sheth","Pratik Sheth","Jinal Sheth","Neehar Sheth"," Dhveer Sheth","My Family"];
+
+var x=0;
+
+function nextslide(){
+x+=1;
+if(x<=7){
+    document.getElementById("image").src=img[x];
+    document.getElementById("name").innerHTML=names[x];
+}
+else{
+    x=0
+    document.getElementById("image").src=img[x];
+    document.getElementById("name").innerHTML=names[x];
+}
+}
